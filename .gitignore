@@ -74,3 +74,5 @@ Miniconda*.exe
 /vcpkg
 
 !/logo/logo.png
+
+.idea

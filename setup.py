@@ -284,13 +284,13 @@ extensions = cythonize([Extension("rawpy._rawpy",
 exec(open('rawpy/_version.py').read())
 
 setup(
-      name = 'rawpy',
+      name = 'newrawpy',
       version = __version__,
       description = 'RAW image processing for Python, a wrapper for libraw',
       long_description = open('README.md').read(),
       long_description_content_type='text/markdown',
-      author = 'Maik Riechert',
-      url = 'https://github.com/letmaik/rawpy',
+      author = 'Shade',
+      url = 'https://github.com/shade-labs/newrawpy',
       classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
