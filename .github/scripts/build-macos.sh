@@ -114,10 +114,10 @@ echo "Dumping LC_VERSION_MIN_MACOSX (pre-10.14) & LC_BUILD_VERSION"
 mkdir tmp_wheel
 pushd tmp_wheel
 unzip ../dist/*.whl
-echo rawpy/*.so
-otool -l rawpy/*.so | grep -A 3 LC_VERSION_MIN_MACOSX || true
-otool -l rawpy/*.so | grep -A 4 LC_BUILD_VERSION || true
-for file in rawpy/.dylibs/*.dylib; do
+echo newrawpy/*.so
+otool -l newrawpyy/*.so | grep -A 3 LC_VERSION_MIN_MACOSX || true
+otool -l newrawpy/*.so | grep -A 4 LC_BUILD_VERSION || true
+for file in newrawpy/.dylibs/*.dylib; do
     echo $file
     otool -l $file | grep -A 3 LC_VERSION_MIN_MACOSX || true
     otool -l $file | grep -A 4 LC_BUILD_VERSION || true
